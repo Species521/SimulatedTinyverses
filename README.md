@@ -45,4 +45,12 @@ Example below of the 'Worker' blueprint class (the green guys):
 ## Current Flaws
 
 1. the NPC behaviour is still location-based, which on the one hand makes task assignment easier but (rarely) leads to some characters being inconclusive and 'changing their mind' mid-way
-2. the general simulation speed can technically be set by selecting the clock and 
+2. the general simulation speed can technically be configured, see above, but for some NPCs it's necessary to re-adjust some waiting times inside the Delay nodes (or they might get up in the middle of the night because their next action is already triggered)
+<br/><br/>
+
+## Road Map
+
+1. the NPCs have already variables for Energy and Mood, these will feed into their schedules and task decisions
+2. NPC-to-NPC interaction, controlling with whom they visit the tavern or having chats at the marketplace, and feeding into their mood
+3. NPCs will be able to pick up crop from the farm and distribute it across the marketplac and the tavern
+
